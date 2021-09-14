@@ -1,12 +1,12 @@
 import hashlib
 
-def encrypt_md5(word):
+def encrypt_md5(word: str) -> str:
     return hashlib.md5(word.encode('utf-8')).hexdigest()
 
-def encrypt_sha1(word):
+def encrypt_sha1(word: str) -> str:
     return hashlib.sha1(word.encode('utf-8')).hexdigest()
 
-def encrypt_sha256(word):
+def encrypt_sha256(word: str) -> str:
     return hashlib.sha256(word.encode('utf-8')).hexdigest()
 
 word = input('Введите слово или фразу для шифрования: ')
